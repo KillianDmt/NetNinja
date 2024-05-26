@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <h1>Html Forms</h1>
+        <form>
+            <!--type we expect, 
+                id must be unique, can be uses as hook in css, js
+                name attribute can be used for php,...
+                name and id the same ? no problem ? 
+            -->
+            <label for="username">enter username : </label>
+            <input type="text" id="username" name="username" placeholder="Username" required>
+            <br><br>
+            <label for="email">enter email : </label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+            <br><br>
+            <label for="password">enter password : </label>
+            <input type="password" id="password" name="password" placeholder="Choose a password" required>
+            <br><br>
+            
+       
+
+        <!--When user clicks on a radio button, it becomes checked and all other radio button with the same name become unchecked.
+        name can be used to group different input in one! type of value ~understandable~ 
+        value attribute are the one processed service side-->
+        <p>Select Your Age : </p>
+            <input type="radio" name="age" value="0-25" id="option-1">
+            <label for="option-1">0-25</label>
+            <br>
+            <input type="radio" name="age" value="26-35" id="option-2">
+            <label for="option-2">26-35</label>
+            <br>
+            <input type="radio" name="age" value="36-99" id="option-3">
+            <label for="option-3">36-99</label>
+            <br><br>
+            <!--Dropdown selection-->
+            <label for="question">Security question : </label>
+            <select name="question" id="question">
+                <option value="q1">What color are your favorite pair of socks ?</option>
+                <option value="q2">If you could be a vegetable, what it be ? </option>
+                <option value="q3">What is your best ever security question ?</option>
+            </select>
+            <br><br>
+
+            <label for="answer">Security question answer : </label>
+            <input type="text" id="answer" name="answer">
+
+            <br><br>
+            <!--can override cols/rows with width/height in css can create larger space by holding it in web pages-->
+            <label for="bio">Enter your bio : </label>
+            <textarea name="bio" id="bio" cols="30" rows="20" placeholder="About you...">
+            <!-- can have default content->Enter your Bio... if written in placeholder, erase while written in--></textarea>
+            <!-- Does placeholder replace label ?-->
+
+            <input type="submit" value="submit the form">
+            <!--Used with action's form attribute, Need backend coding, php, js,data processing-->
+            <!-- Html5 comes with built in validation -->
+        </form>
+
+
+    </body>
+    </html>
