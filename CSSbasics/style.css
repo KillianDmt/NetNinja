@@ -35,3 +35,15 @@ li {
     can have margin only left and right
 Inline-block spread on one line but can use margin padding as block
 block-level element use the whole width of the page*/
+
+p.error /*all p that has error as class*/ {
+    color:red;
+}
+
+/* p.success.feedback  all p that has success & feedback as class
+id can be used in css (better for js ?) but id has to be unique  (p)#id{}
+section p {} == all p children from section
+p .error{} == all classes error that are children from p
+a[href($)] all a that has a href attribute (end with)
+ */
+
