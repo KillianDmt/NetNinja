@@ -1,0 +1,37 @@
+h1 {
+    color : orange;
+    background-color: slategray;
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+/*text decoration none for non underline links
+multiple text-align for nav ?*/
+p {
+    color : slategray;
+    text-align: right;
+    line-height: 30px;
+    letter-spacing: 2px;
+    column-count: 3;
+    column-gap: 60px;
+}
+
+ul{
+    border : 4px solid crimson;
+    /*same as 
+    border-width:4px;
+    border-style:solid;
+    border-color:crimson;*/
+    border-left:2px dotted;
+}
+
+li {
+    list-style-type: none;
+    text-shadow: /*offset right top color*/ 2px 2px #e9e9e9;
+}
+
+/*Inline element split the line between themselves using only space needed
+    can have margin only left and right
+Inline-block spread on one line but can use margin padding as block
+block-level element use the whole width of the page*/
