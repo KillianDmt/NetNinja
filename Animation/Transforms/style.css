@@ -1,0 +1,19 @@
+.wrapper{
+    width:100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightblue;
+    text-align: center;
+}
+
+img{
+    /*translate=movement
+    scale=grow
+    rotate X or Y or Z(clockwise), X used for Star Wars Intro
+    */
+    transform: rotateX(70deg);
+    /*Multiple action function as a FIFO then next action*/
+}
