@@ -17,3 +17,22 @@ img{
     transform: rotateX(70deg);
     /*Multiple action function as a FIFO then next action*/
 }
+
+.circle{
+    width: 100px;
+    padding:50px 0;
+    line-height: 0;
+    /*perfect circle*/
+    margin: 60px auto;
+    background-color: pink;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 1s, transform 2s 1s ease-in;/*action time delay*/
+}
+
+.circle:hover{
+    background-color: salmon;
+    transform: rotate(360deg);
+
+}
